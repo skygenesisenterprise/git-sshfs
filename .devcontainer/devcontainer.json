@@ -1,0 +1,16 @@
+{
+  "name": "git-sshfs Dev Container",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "typescript.tsdk": "node_modules/typescript/lib"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next"
+  ],
+  "postCreateCommand": "npm install",
+  "remoteUser": "vscode"
+}
